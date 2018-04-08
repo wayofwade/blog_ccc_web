@@ -1,0 +1,176 @@
+nav{
+	background: #ccc;
+	height: 50px;
+}
+
+#binner{
+	background: #777;
+	height:700px;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0;
+	float: right;
+}
+
+nav ul li ,nav .logo{
+	display: inline-block;
+	line-height: 50px;
+	margin-right: 20px;
+
+}
+nav ul li a{
+	line-height: inherit;
+	text-decoration: none;
+    display: inline-block;
+    height: inherit;
+    color:#fff;
+}
+
+nav .logo {
+	float: left;
+	padding-left: 10px;
+	display: inline-block;
+	line-height: 50px;
+
+}
+
+#binner .inner {
+    max-width: 300px;
+    text-align: center;
+    margin:0 auto;
+    position: relative;
+    top: 160px;
+}
+#binner .inner h1{
+	margin: 0px;
+}
+
+#binner button{
+	padding: 14px 60px;
+}
+
+button{
+	border:none;
+	background: #333;
+	color: #eee;
+	padding: 14px 40px;
+}
+
+#binner .inner .more{
+    margin-top: 240px;
+}
+
+.sub-heading{
+	line-height: 30px;
+	margin:30px 0;
+}
+
+.logo{
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.logo a{
+	color:#fff;
+	text-decoration: none;
+}
+
+.green{
+	text-align: center;
+	background:#089DB0;
+	color:#fff;
+	margin: 0px;
+}
+
+.wrapper{
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+
+h1{
+	margin-top: 0px;
+}
+
+.wrapper .hr{
+	width: 60%;
+	height: 2px;
+	margin:20px auto;
+	background:#fff;
+}
+
+.green .wrapper .icon-group .icon{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border:1px solid #fff;
+	background:#3e848d;
+    transform: rotate(45deg);
+    margin:20px;
+}
+.green .wrapper .icon-group{
+	margin-top: 60px;
+}
+
+
+
+.gray .image-section{
+  float: left;
+	width: 45%;
+  content:'';
+  display: block;
+  clear: both;
+}
+.imgae-section img{
+	width: 100%;
+}
+.gray .text-section{
+  float: left;
+	width:55%;
+}
+
+.gray{
+	background: #252f34;
+	color:#fff;
+}
+
+.article-preview:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.text-section{
+	position: relative;
+	top:68px;
+
+}
+.text-section h2{
+	margin-bottom: 20px;
+}
+
+.text-section p{
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+.text-seciton .sub-heading{
+	font-size: 22px;
+}
+
+.purple .image-section{
+  float: left;
+  width: 45%;
+  content:'';
+  display: block;
+  clear: both;
+}
+.purple .text-section{
+  float: left;
+  width:55%;
+}
+.purple{
+  background:linen;
+  color:#fff;
+}

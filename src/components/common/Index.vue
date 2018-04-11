@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="my-head"><v-header></v-header></div>
+    <div id="my-head" style="height:60px;"><v-header></v-header></div>
     <div id="my-body"><router-view></router-view></div>
   </div>
 </template>

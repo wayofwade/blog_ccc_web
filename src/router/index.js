@@ -28,7 +28,7 @@ export default new Router({
         {
           path: '/blogList',
           name: '技术博客',
-          component: resolve => require(['../components/pages/BlogList.vue'], resolve)
+          component: resolve => require(['../components/blogList/BlogList.vue'], resolve)
         },
         {
           path: '/articleList',

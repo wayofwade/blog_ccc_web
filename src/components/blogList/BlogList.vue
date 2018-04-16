@@ -10,37 +10,23 @@
         </div>
       </div>
       <div class="right-bottom">
-        <el-form ref="form" :model="detailForm" label-width="100px" style="margin-left: 50px;">
-          <el-form-item label="数据表名称：" style="margin-top: 0px;margin-bottom: 0px;">
-          <span style="margin:0px 5px;">{{detailForm.dtName}}</span>
-        </el-form-item>
-          <el-form-item label="数据表名称：" style="margin-top: 0px;margin-bottom: 0px;">
-            <span style="margin:0px 5px;">{{detailForm.dtName}}</span>
-          </el-form-item>
-          <el-form-item label="数据表名称：" style="margin-top: 0px;margin-bottom: 0px;">
-            <span style="margin:0px 5px;">{{detailForm.dtName}}</span>
-          </el-form-item>
-        </el-form>
+        详细信息
       </div>
     </div>
     <div class="mid">
-      <div class="mid-mid">
-        <blog-list-page></blog-list-page>
-      </div>
+      中间
     </div>
   </div>
 </template>
 <style>
   #all{
     width:100%;
-    height:calc(100vh - 60px);
-    background-color: #089db0;
+    height:100%;
+    background-color: #b3d8ff;
   }
   .right{
     width:260px;
     height:calc(100vh - 60px);
-    padding:10px;
-    box-sizing: border-box;
     float:right;
     background-color: tomato;
   }
@@ -71,29 +57,10 @@
     text-align: center;
   }
   .mid{
-    padding: 10px;
-    box-sizing: border-box;
     width:calc(100% - 260px);
-    height: calc(100vh - 60px);
-    float: left;
+    float:left;
     background-color: yellow;
-  }
-  .mid-mid{
-    width:100%;
-    height: 100%;
-    background-color: tomato;
   }
 </style>
 <script>
-import blogListPage from './blogListPage.vue'
-export default {
-  components: {blogListPage},
-  data () {
-    return {
-      detailForm: {
-        dtName: 9527
-      }
-    }
-  }
-}
 </script>

@@ -1,6 +1,6 @@
 # vue_blog_ccc
 
-> A Vue.js project ==ccc
+> A Vue.js project
 
 ## Build Setup
 

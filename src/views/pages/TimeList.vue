@@ -3,6 +3,6 @@
         时间轴
     </div>
 </template>
-<style></style>
+<style scoped></style>
 <script>
 </script>

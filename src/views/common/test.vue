@@ -3,7 +3,7 @@
       <h1 class="my-h1">this is template body</h1>
     </div>
 </template>
-<style>
+<style scoped>
   #die{
     margin: 0;
   }

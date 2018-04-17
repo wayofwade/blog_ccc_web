@@ -3,6 +3,6 @@
     文章
   </div>
 </template>
-<style></style>
+<style scoped></style>
 <script>
 </script>

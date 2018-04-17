@@ -14,11 +14,11 @@
       </div>
     </div>
     <div class="mid">
-      中间
+      <mid></mid>
     </div>
   </div>
 </template>
-<style>
+<style scoped>
   #all{
     width:100%;
     height:100%;
@@ -58,9 +58,21 @@
   }
   .mid{
     width:calc(100% - 260px);
+    height:calc(100vh - 60px);
     float:left;
+    padding:10px;
+    box-sizing: border-box;
     background-color: yellow;
   }
 </style>
 <script>
+import mid from './components/blogList-mid.vue'
+export default {
+  components: {
+    mid
+  },
+  data () {
+    return {msg: 'hello vue'}
+  }
+}
 </script>

@@ -5,7 +5,15 @@
          {{d.name}}
         </div>
       </div>
-      <div id="mid-bottom"></div>
+      <div id="mid-bottom">
+        <div id="mid-bottom-page">
+        <el-pagination
+          background
+          layout="prev, pager, next"
+          :total="1000">
+        </el-pagination>
+        </div>
+      </div>
     </div>
 </template>
 <style scoped>
@@ -21,15 +29,21 @@
     background-color: blanchedalmond;
   }
   #mid-top-1{
-    width:300px;
-    height:200px;
-    margin-right:20px; margin-bottom:10px;
-    background-color: yellow;
+    width:380px;
+    height:250px;
+    margin-left:25px;
+    margin-bottom:10px;
+    background-color: cornflowerblue;
   }
   #mid-bottom{
     width:100%;
     height:6%;
-    background-color: blueviolet;
+    background-color: whitesmoke;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #mid-bottom-page{
+    float: right;
   }
 </style>
 <script>
@@ -44,6 +58,10 @@ export default {
         {name: 'f', value: 'tttt'},
         {name: 'vg', value: 'tttt'},
         {name: 'gb', value: 'tttt'},
+        {name: 'bg', value: 'tttt'},
+        {name: 'bg', value: 'tttt'},
+        {name: 'bg', value: 'tttt'},
+        {name: 'bg', value: 'tttt'},
         {name: 'bg', value: 'tttt'}]
     }
   }

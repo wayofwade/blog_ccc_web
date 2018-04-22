@@ -29,7 +29,7 @@
     background-color: blanchedalmond;
   }
   #mid-top-1{
-    width:380px;
+    width:370px;
     height:250px;
     margin-left:25px;
     margin-bottom:10px;

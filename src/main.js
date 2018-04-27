@@ -16,4 +16,4 @@ new Vue({
   render: h => h(App)
 })
 
-// 程序的入口=hhh
+// 程序的入口

@@ -15,3 +15,5 @@ new Vue({
   router,
   render: h => h(App)
 })
+
+// 程序的入口=

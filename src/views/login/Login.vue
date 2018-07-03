@@ -1,11 +1,11 @@
 <template>
     <div class="myBack">
       <div id="my-pic">
-      <img src="../../assets/image/鸽子.jpg"/>
+      <img src="../../assets/image/GZ.jpg"/>
       </div>
     <div id="loginWindow">
-      <el-input v-model="input" placeholder="请输入用户名" class="my-input"></el-input>
-      <el-input v-model="input" placeholder="请输入密码" class="my-input"></el-input>
+      <el-input v-model="loginForm.username" placeholder="请输入用户名" class="my-input"></el-input>
+      <el-input v-model="loginForm.password" placeholder="请输入密码" class="my-input"></el-input>
       <el-button  class="my-btn" @click="login">Login</el-button>
     </div>
     </div>
@@ -14,6 +14,12 @@
 <script>
 export default {
   data () {
+    return {
+      loginForm: {
+        username: 'chencc',
+        password: '123456'
+      }
+    }
   },
   methods: {
     login () {

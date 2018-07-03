@@ -31,7 +31,7 @@
     <section class="gray">
       <div class="article-preview">
         <div class="image-section">
-          <img src="../../assets/image/克莱汤普森.jpg">
+          <img src="../../assets/image/TPS.jpg">
         </div>
         <div class="text-section">
           <h1>图片和文字</h1>
@@ -46,7 +46,7 @@
     <section class="purple">
       <div class="article-preview">
         <div class="image-section">
-          <img src="../../assets/image/克莱汤普森.jpg">
+          <img src="../../assets/image/TPS.jpg">
         </div>
         <div class="text-section">
           <h1>图片和文字</h1>

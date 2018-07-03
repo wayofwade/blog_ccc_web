@@ -3,7 +3,7 @@
     <div class="right">
       <div class="right-top">
         <div class="right-top-img">
-         <img id="img" src="../../assets/image/克莱汤普森.jpg">
+         <img id="img" src="../../assets/image/TPS.jpg">
         </div>
         <div class="right-top-title">
           克莱汤普森
@@ -58,11 +58,10 @@
   }
   .mid{
     width:calc(100% - 260px);
-    height:calc(100vh - 60px);
     float:left;
-    padding:10px;
+    padding:10px 50px;
     box-sizing: border-box;
-    background-color: yellow;
+    background-color: white;
   }
 </style>
 <script>

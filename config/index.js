@@ -50,12 +50,12 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/', // 打包改成./ ===之前/
     /**
      * Source Maps
      */
 
-    productionSourceMap: true,
+    productionSourceMap: true, // 打包的时候要改成false，之前true
     // https://webpack.js.org/configuration/devtool/#production
     devtool: '#source-map',
 

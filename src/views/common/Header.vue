@@ -12,6 +12,9 @@
     <el-menu-item index="3" @click="toBlogList">技术博客</el-menu-item>
     <el-menu-item index="4" @click="toArticleList">碎碎杂谈</el-menu-item>
     <el-menu-item index="5" @click="toTimeList">时间轴</el-menu-item>
+    <el-menu-item index="6" @click="toTimeList">学做菜</el-menu-item>
+    <el-menu-item index="7" @click="toTimeList">天气</el-menu-item>
+    <el-menu-item index="8" @click="toTimeList">篮球</el-menu-item>
     <el-menu-item index="2"><a href="#" target="_blank">关于我</a>
     </el-menu-item>
   </el-menu>
@@ -33,13 +36,13 @@ export default {
       this.$router.push({path: '/index', params: {}})
     },
     toBlogList () {
-      this.$router.push({path: '/blogList', params: {}})
+      this.$router.push({path: '/blogList', name: '技术博客', params: {}})
     },
     toArticleList () {
-      this.$router.push({path: '/articleList', params: {}})
+      this.$router.push({path: '/articleList', name: '碎碎杂谈', params: {}})
     },
     toTimeList () {
-      this.$router.push({path: '/timeList', params: {}})
+      this.$router.push({path: '/timeList', name: '时间轴', params: {}})
     }
   }
 }

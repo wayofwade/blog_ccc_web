@@ -14,7 +14,6 @@ export default new Router({
       name: '登录',
       component: resolve => require(['../views/login/Login.vue'], resolve)
     },
-
     {
       path: '/index',
       name: '主页',

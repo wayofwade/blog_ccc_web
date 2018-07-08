@@ -38,6 +38,11 @@ export default new Router({
           path: '/timeList',
           name: '时间轴',
           component: resolve => require(['../views/pages/TimeList.vue'], resolve)
+        },
+        {
+          path: '/cooking',
+          name: '学做菜',
+          component: resolve => require(['../views/pages/cooking/index.vue'], resolve)
         }
       ]
     }

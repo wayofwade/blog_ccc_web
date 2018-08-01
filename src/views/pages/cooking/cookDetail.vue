@@ -5,7 +5,7 @@
       <div>右边</div>
       </div>
       <div>
-        图片和文字循环
+        图片和文字循环hh
       </div>
     </div>
 </template>

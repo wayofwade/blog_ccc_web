@@ -12,7 +12,7 @@
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
                     <time class="time">{{ currentDate }}</time>
-                    <el-button type="text" class="button">操作按钮</el-button>
+                    <el-button type="text" class="button"  @click="gotoDetail">查看详情</el-button>
                   </div>
                 </div>
               </el-card>
@@ -20,7 +20,12 @@
         </el-main>
         <el-footer>
           <div class="bottom-page">
-          烦人呢有
+            <el-pagination
+              class="pageDetail"
+              background
+              layout="prev, pager, next"
+              :total="1000">
+            </el-pagination>
           </div>
         </el-footer>
       </el-container>
@@ -72,7 +77,13 @@ body {
 /*中间图片相关*/
 .bottom-page{
   height:80px;
-  background-color: #8cc5ff;
+  background-color: honeydew;
+  position: relative;
+}
+.pageDetail{
+  position: absolute;
+  right:50px;
+  bottom: 20px;
 }
 </style>
 <script>
@@ -83,5 +94,11 @@ export default {
       currentDate: new Date()
     }
   },
-  components: {}
+  components: {},
+  methods: {
+    gotoDetail () {
+      console.log('00000')
+      this.$router.push({name: '做菜详情', path: '/cookDetail'})
+    }
+  }
 }</script>

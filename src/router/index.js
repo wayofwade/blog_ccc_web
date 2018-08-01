@@ -43,6 +43,11 @@ export default new Router({
           path: '/cooking',
           name: '学做菜',
           component: resolve => require(['../views/pages/cooking/index.vue'], resolve)
+        },
+        {
+          path: '/cookDetail',
+          name: '做菜详情',
+          component: resolve => require(['../views/pages/cooking/cookDetail.vue'], resolve)
         }
       ]
     }

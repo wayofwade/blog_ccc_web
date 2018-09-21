@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import axios from '../../api/config'
+import axios2 from 'axios'
 export default {
   data () {
     return {
@@ -23,7 +25,25 @@ export default {
   },
   methods: {
     login () {
-      this.$router.push({path: '/index', params: {}})
+      console.log(this.loginForm) // 请求后端
+      let obj = this.loginForm
+      axios.post({
+        url: '/blog/user/saveUser',
+        params: obj
+      })
+        .then((res) => {
+          if (res.rc === 0) {
+            this.$message({
+              message: '操作成功',
+              type: 'success',
+              duration: 1000
+            })
+            this.$router.push({path: '/index', params: {}})
+          }
+        })
+        .catch(error => {
+          console.log(error)
+        })
     }
   }
 }

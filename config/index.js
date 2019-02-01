@@ -11,9 +11,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/': {
-        target: 'http://localhost:9527',
-        changeOrigin: true
+      '/node': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        pathRewrite: { // 前端/node路径，但是后端是/
+          '/node': '/'
+        }
       }
     },
     // Various Dev Server settings

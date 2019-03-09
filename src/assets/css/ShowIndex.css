@@ -1,3 +1,9 @@
+.all-body{
+  width:100%;
+}
+.content{
+  width: 100%;
+}
 nav{
 	background: #ccc;
 	height: 50px;
@@ -43,6 +49,9 @@ nav .logo {
     position: relative;
     top: 160px;
 }
+#binner .inner-width{
+  max-width: 500px;
+}
 #binner .inner h1{
 	margin: 0px;
 }
@@ -65,6 +74,9 @@ button{
 .sub-heading{
 	line-height: 30px;
 	margin:30px 0;
+}
+.sub-heading-width{
+  width:500px;
 }
 
 .logo{
@@ -115,41 +127,18 @@ h1{
 }
 
 
-
-.gray .image-section{
-  float: left;
-	width: 45%;
-  content:'';
-  display: block;
-  clear: both;
-}
-.imgae-section img{
-	width: 100%;
-}
-.gray .text-section{
-  float: left;
-	width:55%;
-}
-
+/*图片以及文字弹性布局*/
 .gray{
-	background: #252f34;
-	color:#fff;
+  background: #252f34;
+  color:#fff;
+  width: 100%;
 }
-
-.article-preview:after{
-    content:'';
-    display: block;
-    clear: both;
+.article-preview{
+    width: 100%;
 }
-.text-section{
-	position: relative;
-	top:68px;
-
-}
-.text-section h2{
+/*.text-section h2{
 	margin-bottom: 20px;
 }
-
 .text-section p{
 	font-size: 18px;
 	letter-spacing: 2px;
@@ -157,18 +146,26 @@ h1{
 
 .text-seciton .sub-heading{
 	font-size: 22px;
-}
+}*/
 
-.purple .image-section{
-  float: left;
-  width: 45%;
-  content:'';
-  display: block;
-  clear: both;
+.image-section{
+  width: 300px;
+  position: absolute;
+  height: 300px;
+  background-color: blue;
 }
-.purple .text-section{
-  float: left;
-  width:55%;
+.image-section>img {
+  width: 100%;
+  height: 100%;
+}
+.text-section{
+  text-align: center;
+  margin-left: 300px;
+  height: 300px;
+  overflow: auto;
+}
+.text-section-desc{
+  text-align: left;
 }
 .purple{
   background:linen;

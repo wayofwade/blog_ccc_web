@@ -11,7 +11,7 @@
       <!--登录数据-->
       <el-form v-if="isLogin" :model="loginData" status-icon :rules="loginRule" ref="loginData" label-width="86px" class="demo-ruleForm">
         <div style="margin-bottom: 20px;text-align: center">
-          <span style="">登录知乎，发现更大的世界</span>
+          <span style="">随便填，发现更大的世界</span>
         </div>
         <el-form-item label="用户名" prop="username">
           <el-input class="smallInput" v-model="loginData.username"></el-input>
@@ -24,7 +24,7 @@
       <!--注册的表单-->
       <el-form v-else :model="registerData" status-icon :rules="registerRule" ref="registerData" label-width="86px" class="demo-ruleForm">
         <div style="margin-bottom: 20px;text-align: center">
-          <span style="">注册知乎，发现更大的世界</span>
+          <span style="">随便填，发现更大的世界</span>
         </div>
         <el-form-item label="用户名" prop="username">
           <el-input class="smallInput" v-model="registerData.username"></el-input>
@@ -170,7 +170,7 @@ export default {
     submitLogin (loginData) { // 验证登录
       this.$refs[loginData].validate((valid) => {
         if (valid) {
-          alert('submit!')
+          this.$router.push('/index')
         } else {
           console.log('error submit!!')
           return false

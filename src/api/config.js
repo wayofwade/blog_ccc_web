@@ -12,7 +12,7 @@ const axiosObj = axios.create({
 })
 
 function isOk (res) {
-  return res && (res.rc === 0)
+  return res && (res.rc === 0 || res.rc === '0')
 }
 
 function formatParams (params) {

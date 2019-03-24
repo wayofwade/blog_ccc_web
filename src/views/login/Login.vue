@@ -160,8 +160,8 @@ export default {
       })
     },
     toLogin (loginData) { // 判断登录按钮
-      let obj = {}
-      axios.get({
+      // let obj = {}
+      /* axios.get({
         url: '/node/hello',
         params: obj
       }).then((res) => {
@@ -171,13 +171,13 @@ export default {
         }
       }).catch((error) => {
         console.log(error)
-      })
-      /* if (this.isLogin) {
+      }) */
+      if (this.isLogin) {
         this.submitLogin(loginData)
       } else {
         this.isLogin = true
         this.resetForm('registerData')
-      } */
+      }
     },
     submitLogin (loginData) { // 验证登录
       this.$refs[loginData].validate((valid) => {
